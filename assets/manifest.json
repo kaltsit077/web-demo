@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "ui": {
+    "btnPrimary": "ui/button_square_header_blade_rectangle.png",
+    "btnDefault": "ui/button_square_header_large_rectangle.png",
+    "btnGhost": "ui/button_metal.png",
+    "btnLocked": "ui/button_locked.png",
+    "slot": "ui/slot_metal.png",
+    "slotDepth": "ui/slot_metal_depth.png",
+    "crosshair": "ui/crosshair_color_a.png",
+    "bar": "ui/bar_square_large.png"
+  },
+  "fonts": {
+    "display": "fonts/KenneyFuture.ttf",
+    "mono": "fonts/KenneyFutureNarrow.ttf"
+  },
+  "operators": {
+    "amiya": {
+      "queue": "operators/queue/amiya.svg",
+      "loaded": "operators/loaded/amiya.svg"
+    },
+    "savage": {
+      "queue": "operators/queue/savage.svg",
+      "loaded": "operators/loaded/savage.svg"
+    },
+    "texas": {
+      "queue": "operators/queue/texas.svg",
+      "loaded": "operators/loaded/texas.svg"
+    },
+    "lappland": {
+      "queue": "operators/queue/lappland.svg",
+      "loaded": "operators/loaded/lappland.svg"
+    },
+    "wisadel": {
+      "queue": "operators/queue/wisadel.svg",
+      "loaded": "operators/loaded/wisadel.svg"
+    },
+    "exusiai": {
+      "queue": "operators/queue/exusiai.svg",
+      "loaded": "operators/loaded/exusiai.svg"
+    },
+    "executor": {
+      "queue": "operators/queue/executor.svg",
+      "loaded": "operators/loaded/executor.svg"
+    },
+    "ceobe": {
+      "queue": "operators/queue/ceobe.svg",
+      "loaded": "operators/loaded/ceobe.svg"
+    },
+    "skadi": {
+      "queue": "operators/queue/skadi.svg",
+      "loaded": "operators/loaded/skadi.svg"
+    },
+    "blaze": {
+      "queue": "operators/queue/blaze.svg",
+      "loaded": "operators/loaded/blaze.svg"
+    },
+    "mostima": {
+      "queue": "operators/queue/mostima.svg",
+      "loaded": "operators/loaded/mostima.svg"
+    },
+    "magallan": {
+      "queue": "operators/queue/magallan.svg",
+      "loaded": "operators/loaded/magallan.svg"
+    },
+    "kaltsit": {
+      "queue": "operators/queue/kaltsit.svg",
+      "loaded": "operators/loaded/kaltsit.svg"
+    },
+    "chen": {
+      "queue": "operators/queue/chen.svg",
+      "loaded": "operators/loaded/chen.svg"
+    },
+    "silverash": {
+      "queue": "operators/queue/silverash.svg",
+      "loaded": "operators/loaded/silverash.svg"
+    },
+    "siege": {
+      "queue": "operators/queue/siege.svg",
+      "loaded": "operators/loaded/siege.svg"
+    },
+    "eyjafjalla": {
+      "queue": "operators/queue/eyjafjalla.svg",
+      "loaded": "operators/loaded/eyjafjalla.svg"
+    },
+    "saria": {
+      "queue": "operators/queue/saria.svg",
+      "loaded": "operators/loaded/saria.svg"
+    },
+    "ifrit": {
+      "queue": "operators/queue/ifrit.svg",
+      "loaded": "operators/loaded/ifrit.svg"
+    },
+    "surtr": {
+      "queue": "operators/queue/surtr.svg",
+      "loaded": "operators/loaded/surtr.svg"
+    },
+    "mountain": {
+      "queue": "operators/queue/mountain.svg",
+      "loaded": "operators/loaded/mountain.svg"
+    },
+    "phantom": {
+      "queue": "operators/queue/phantom.svg",
+      "loaded": "operators/loaded/phantom.svg"
+    },
+    "thorns": {
+      "queue": "operators/queue/thorns.svg",
+      "loaded": "operators/loaded/thorns.svg"
+    },
+    "croissant": {
+      "queue": "operators/queue/croissant.svg",
+      "loaded": "operators/loaded/croissant.svg"
+    },
+    "hoshiguma": {
+      "queue": "operators/queue/hoshiguma.svg",
+      "loaded": "operators/loaded/hoshiguma.svg"
+    },
+    "angelina": {
+      "queue": "operators/queue/angelina.svg",
+      "loaded": "operators/loaded/angelina.svg"
+    }
+  },
+  "papers": {
+    "chinese": "papers/chinese.svg",
+    "math": "papers/math.svg",
+    "english": "papers/english.svg"
+  },
+  "audio": {
+    "bgm": [
+      "audio/bgm/main_theme.ogg"
+    ],
+    "sfx": {
+      "click": "audio/sfx/ui_click.ogg",
+      "confirm": "audio/sfx/ui_confirm.ogg",
+      "back": "audio/sfx/ui_back.ogg",
+      "error": "audio/sfx/ui_error.ogg",
+      "select": "audio/sfx/ui_select.ogg",
+      "open": "audio/sfx/ui_open.ogg",
+      "switch": "audio/sfx/ui_switch.ogg",
+      "hit": "audio/sfx/combat_hit.ogg",
+      "destroy": "audio/sfx/combat_destroy.ogg"
+    }
+  },
+  "slingshot": {},
+  "user": {
+    "bgm": "user/bgm/"
+  }
+}

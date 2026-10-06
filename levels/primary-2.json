@@ -1,0 +1,24 @@
+{
+  "id": "primary-2",
+  "name": "小学部 · 第2课",
+  "stage": "primary",
+  "playerHp": 5,
+  "operatorPool": ["amiya", "texas", "exusiai"],
+  "pickCount": 3,
+  "waves": [
+    {
+      "papers": [
+        { "template": "math-basic", "gridCol": 0, "gridRow": 0 },
+        { "template": "math-basic", "gridCol": 2, "gridRow": 0 },
+        { "template": "english-basic", "gridCol": 4, "gridRow": 1 }
+      ]
+    },
+    {
+      "papers": [
+        { "template": "chinese-basic", "gridCol": 1, "gridRow": 0 },
+        { "template": "english-basic", "gridCol": 3, "gridRow": 1 },
+        { "template": "math-basic", "gridCol": 2, "gridRow": 2 }
+      ]
+    }
+  ]
+}

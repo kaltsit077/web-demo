@@ -1,0 +1,37 @@
+[
+  {
+    "id": "fixed-dmg",
+    "name": "固定伤害弹",
+    "role": "固伤道具",
+    "status": "locked",
+    "description": "无视学科追加固定伤害。上弓后、发射前可装配。后续解锁。"
+  },
+  {
+    "id": "splash",
+    "name": "溅射粉笔",
+    "role": "溅射道具",
+    "status": "locked",
+    "description": "命中点周围试卷一并受伤。适合清密集编队。后续解锁。"
+  },
+  {
+    "id": "dot",
+    "name": "持续批改",
+    "role": "持续伤害",
+    "status": "locked",
+    "description": "命中试卷后，每下降一格再扣固定伤害。后续解锁。"
+  },
+  {
+    "id": "bounce",
+    "name": "二次弹射",
+    "role": "弹射道具",
+    "status": "locked",
+    "description": "命中后弹向下一目标，适合连锁清场。后续解锁。"
+  },
+  {
+    "id": "stand",
+    "name": "替身使者",
+    "role": "置换道具",
+    "status": "locked",
+    "description": "借用另一干员的某一学科值，保留当前干员机制。后续解锁。"
+  }
+]

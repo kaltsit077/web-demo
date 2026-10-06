@@ -1,0 +1,236 @@
+{
+  "amiya": {
+    "name": "阿米娅",
+    "role": "最基础的弹药",
+    "description": "罗德岛的领导者。考试周也要兼顾大家的情绪，三门都不偏科。",
+    "chinese": 3,
+    "math": 3,
+    "english": 3,
+    "color": "#4a90d9"
+  },
+  "savage": {
+    "name": "暴行",
+    "role": "最基础的弹药",
+    "description": "只是一只很会做胡萝卜派的兔子。",
+    "chinese": 4,
+    "math": 1,
+    "english": 1,
+    "color": "#e8a87c"
+  },
+  "texas": {
+    "name": "德克萨斯",
+    "role": "静默弹药",
+    "description": "话少、效率高。迟到的从来不是快递，是你的复习计划。",
+    "chinese": 2,
+    "math": 5,
+    "english": 4,
+    "color": "#2c3e50"
+  },
+  "lappland": {
+    "name": "拉普兰德",
+    "role": "狂乱弹药",
+    "description": "笑着把考场搅得天翻地覆。看见德克萨斯会更兴奋。",
+    "chinese": 5,
+    "math": 3,
+    "english": 1,
+    "color": "#b8c0c8"
+  },
+  "wisadel": {
+    "name": "维什戴尔",
+    "role": "爆破弹药",
+    "description": "爆炸是一门艺术，也是她交作业的方式。",
+    "chinese": 3,
+    "math": 5,
+    "english": 2,
+    "color": "#d35400"
+  },
+  "exusiai": {
+    "name": "能天使",
+    "role": "速射弹药",
+    "description": "苹果派与铳火齐飞。迟到？那是瞄准的一部分。",
+    "chinese": 2,
+    "math": 3,
+    "english": 5,
+    "color": "#e67e22"
+  },
+  "executor": {
+    "name": "斥罪",
+    "role": "审判弹药",
+    "description": "律法即铳口。缺交、作弊、喧哗，皆在制裁名单。",
+    "chinese": 5,
+    "math": 4,
+    "english": 3,
+    "color": "#c9b896"
+  },
+  "ceobe": {
+    "name": "刻俄柏",
+    "role": "本能弹药",
+    "description": "会把武器当零食，也会把零食当武器。肚子永远排第一。",
+    "chinese": 2,
+    "math": 1,
+    "english": 1,
+    "color": "#c49a6c"
+  },
+  "skadi": {
+    "name": "斯卡蒂",
+    "role": "重型弹药",
+    "description": "独自狩猎的深海猎手。沉默，却足以掀翻整片考场。",
+    "chinese": 2,
+    "math": 6,
+    "english": 2,
+    "color": "#5dade2"
+  },
+  "blaze": {
+    "name": "煌",
+    "role": "冲锋弹药",
+    "description": "热血一上头，连答题卡都能烧穿。冲锋从不回头。",
+    "chinese": 4,
+    "math": 3,
+    "english": 2,
+    "color": "#e74c3c"
+  },
+  "mostima": {
+    "name": "莫斯提马",
+    "role": "时空弹药",
+    "description": "时间在她身边变得很慢——交卷也一样。",
+    "chinese": 3,
+    "math": 4,
+    "english": 5,
+    "color": "#3d5a80"
+  },
+  "magallan": {
+    "name": "麦哲伦",
+    "role": "探测弹药",
+    "description": "带着无人机远征的探险家。未知地图比标准答案有趣。",
+    "chinese": 2,
+    "math": 5,
+    "english": 4,
+    "color": "#27ae60"
+  },
+  "kaltsit": {
+    "name": "凯尔希",
+    "role": "统御弹药",
+    "description": "罗德岛的医者与军师。她批改过的试卷，很少有人敢再交第二遍。",
+    "chinese": 6,
+    "math": 5,
+    "english": 4,
+    "color": "#7f8c8d"
+  },
+  "chen": {
+    "name": "陈",
+    "role": "执法弹药",
+    "description": "近卫局的赤霄在手。考场喧哗？先吃一张警告单。",
+    "chinese": 4,
+    "math": 4,
+    "english": 3,
+    "color": "#1a5276"
+  },
+  "silverash": {
+    "name": "银灰",
+    "role": "商业弹药",
+    "description": "雪山贸易的算盘比任何公式都响。交易与考场，他都稳赢。",
+    "chinese": 3,
+    "math": 6,
+    "english": 5,
+    "color": "#aeb6bf"
+  },
+  "siege": {
+    "name": "推进之王",
+    "role": "王权弹药",
+    "description": "维多利亚的狮心。带头冲进考场，也带头把答案写满。",
+    "chinese": 4,
+    "math": 3,
+    "english": 4,
+    "color": "#f4d03f"
+  },
+  "eyjafjalla": {
+    "name": "艾雅法拉",
+    "role": "学术弹药",
+    "description": "火山学硕士在读。听力不好，但论文与公式一样烫手。",
+    "chinese": 2,
+    "math": 6,
+    "english": 3,
+    "color": "#e59866"
+  },
+  "saria": {
+    "name": "塞雷娅",
+    "role": "屏障弹药",
+    "description": "莱茵的铁壁。实验事故与偏题攻击，她都能挡下来。",
+    "chinese": 3,
+    "math": 5,
+    "english": 3,
+    "color": "#ecf0f1"
+  },
+  "ifrit": {
+    "name": "伊芙利特",
+    "role": "烈焰弹药",
+    "description": "火太旺了就想把卷子烧了。好在还有塞雷娅按住她。",
+    "chinese": 4,
+    "math": 2,
+    "english": 2,
+    "color": "#ff6b35"
+  },
+  "surtr": {
+    "name": "史尔特尔",
+    "role": "毁灭弹药",
+    "description": "记不清来路，但记得挥剑。合格线在她面前只是余烬。",
+    "chinese": 3,
+    "math": 5,
+    "english": 2,
+    "color": "#c0392b"
+  },
+  "mountain": {
+    "name": "山",
+    "role": "礼仪弹药",
+    "description": "穿着得体的拳击手。礼貌地问你答完了吗，然后礼貌地掀翻桌子。",
+    "chinese": 5,
+    "math": 3,
+    "english": 4,
+    "color": "#566573"
+  },
+  "phantom": {
+    "name": "傀影",
+    "role": "暗影弹药",
+    "description": "舞台与阴影的双面人。你交卷时，他可能已经改完了你的答案。",
+    "chinese": 5,
+    "math": 2,
+    "english": 3,
+    "color": "#4a235a"
+  },
+  "thorns": {
+    "name": "棘刺",
+    "role": "研毒弹药",
+    "description": "伊比利亚的研究员。把毒物写进公式，把公式写进实战。",
+    "chinese": 2,
+    "math": 6,
+    "english": 3,
+    "color": "#1abc9c"
+  },
+  "croissant": {
+    "name": "可颂",
+    "role": "面团弹药",
+    "description": "盾牌与面包同在。考砸了？先吃口可颂再说。",
+    "chinese": 3,
+    "math": 2,
+    "english": 2,
+    "color": "#f5b041"
+  },
+  "hoshiguma": {
+    "name": "星熊",
+    "role": "铁壁弹药",
+    "description": "近卫局的鬼人重盾。谁敢作弊，先过她这关。",
+    "chinese": 3,
+    "math": 4,
+    "english": 2,
+    "color": "#196f3d"
+  },
+  "angelina": {
+    "name": "安洁莉娜",
+    "role": "引力弹药",
+    "description": "物流与减速领域专家。拖延症在她身边也会慢半拍。",
+    "chinese": 2,
+    "math": 4,
+    "english": 5,
+    "color": "#af7ac5"
+  }
+}

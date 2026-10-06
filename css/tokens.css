@@ -1,0 +1,82 @@
+:root {
+  /* ── 方舟·考场终端色板 ── */
+  --rh-bg-void: #05080a;
+  --rh-bg-deep: #0a0e12;
+  --rh-bg-base: #12171d;
+  --rh-bg-panel: rgba(18, 28, 36, 0.92);
+  --rh-bg-panel-solid: #161f28;
+  --rh-bg-elevated: #1c2834;
+  --rh-bg-glass: rgba(255, 255, 255, 0.04);
+  --rh-bg-paper: #1a222c;
+
+  --rh-border: rgba(0, 229, 255, 0.22);
+  --rh-border-strong: rgba(0, 229, 255, 0.45);
+  --rh-border-muted: rgba(255, 255, 255, 0.08);
+
+  --rh-accent: #00e5ff;
+  --rh-accent-dim: #00a8bd;
+  --rh-accent-glow: rgba(0, 229, 255, 0.35);
+  --rh-warn: #ff6b4a;
+  --rh-success: #3dffa0;
+  --rh-gold: #ffd166;
+  --rh-ink: #c5d4e0;
+
+  --rh-text: #e8f4f8;
+  --rh-text-muted: #8aa4b4;
+  --rh-text-dim: #5a7284;
+
+  /* ── 字体：显示 / 正文 / 终端 ── */
+  --rh-font: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --rh-font-display: "Kenney Future", "Orbitron", "Noto Sans SC", sans-serif;
+  --rh-font-mono: "Kenney Future Narrow", "Share Tech Mono", "Consolas", monospace;
+
+  /* 字号阶梯：全站统一调这里；组件勿再写死 px（装饰微标除外） */
+  --rh-text-xs: 13px;
+  --rh-text-sm: 15px;
+  --rh-text-md: 18px;
+  --rh-text-lg: 22px;
+  --rh-text-xl: 28px;
+  --rh-text-2xl: 36px;
+  --rh-text-hero: 60px;
+  --rh-text-mega: 84px;
+
+  /* ── 间距 ── */
+  --rh-space-1: 4px;
+  --rh-space-2: 8px;
+  --rh-space-3: 12px;
+  --rh-space-4: 16px;
+  --rh-space-5: 24px;
+  --rh-space-6: 32px;
+  --rh-space-7: 48px;
+
+  /* ── 圆角 / 切角 ── */
+  --rh-radius-sm: 6px;
+  --rh-radius-md: 10px;
+  --rh-radius-lg: 14px;
+  --rh-clip-panel: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+
+  /* ── 阴影（克制：面板深影为主，光晕仅用于焦点态） ── */
+  --rh-shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --rh-shadow-glow: 0 0 20px var(--rh-accent-glow);
+  --rh-shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.35);
+
+  /* ── 布局 ── */
+  --rh-design-w: 720px;
+  --rh-design-h: 1280px;
+  --rh-battle-h: 760px;
+  --rh-dock-h: calc(var(--rh-design-h) - var(--rh-battle-h));
+
+  /* ── 动效 ── */
+  --rh-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --rh-dur-fast: 180ms;
+  --rh-dur-normal: 320ms;
+  --rh-dur-slow: 520ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --rh-dur-fast: 0ms;
+    --rh-dur-normal: 0ms;
+    --rh-dur-slow: 0ms;
+  }
+}

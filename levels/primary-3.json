@@ -1,0 +1,30 @@
+{
+  "id": "primary-3",
+  "name": "小学部 · 第3课",
+  "stage": "primary",
+  "playerHp": 5,
+  "operatorPool": ["amiya", "texas", "exusiai"],
+  "pickCount": 3,
+  "waves": [
+    {
+      "papers": [
+        { "template": "chinese-basic", "gridCol": 1, "gridRow": 0 },
+        { "template": "english-basic", "gridCol": 3, "gridRow": 0 }
+      ]
+    },
+    {
+      "papers": [
+        { "template": "math-basic", "gridCol": 0, "gridRow": 0 },
+        { "template": "chinese-quiz", "gridCol": 2, "gridRow": 1 },
+        { "template": "english-basic", "gridCol": 4, "gridRow": 0 }
+      ]
+    },
+    {
+      "papers": [
+        { "template": "math-quiz", "gridCol": 2, "gridRow": 0 },
+        { "template": "chinese-basic", "gridCol": 1, "gridRow": 1 },
+        { "template": "english-basic", "gridCol": 3, "gridRow": 2 }
+      ]
+    }
+  ]
+}

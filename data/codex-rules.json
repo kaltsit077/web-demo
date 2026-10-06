@@ -1,0 +1,65 @@
+[
+  {
+    "id": "core-pass",
+    "name": "合格线击溃",
+    "category": "核心",
+    "status": "active",
+    "description": "干员命中试卷后，累计伤害达到合格线即可击溃。超出合格线的伤害折算为额外积分。"
+  },
+  {
+    "id": "core-subject",
+    "name": "学科克制",
+    "category": "核心",
+    "status": "active",
+    "description": "语 / 数 / 英三门对应同学科试卷。干员该门数值为 0 时，打出伤害为 0（道具固伤除外）。"
+  },
+  {
+    "id": "core-drop",
+    "name": "定时下降",
+    "category": "核心",
+    "status": "active",
+    "description": "试卷每 5 秒下降 1 格，与发射解耦。越压越紧，别只顾着瞄准。"
+  },
+  {
+    "id": "core-wall",
+    "name": "防线越线",
+    "category": "核心",
+    "status": "active",
+    "description": "试卷越过防线扣 1 点生命；累计 3 次越线或生命耗尽则任务失败。"
+  },
+  {
+    "id": "core-wave",
+    "name": "波次与增益",
+    "category": "核心",
+    "status": "active",
+    "description": "清完当前波次进入间隙三选一增益，再迎下一波。全部波次清空即胜利。"
+  },
+  {
+    "id": "rumor-smile",
+    "name": "她笑起来准没好事",
+    "category": "规则怪谈",
+    "status": "locked",
+    "description": "特定干员处于笑脸形态时发射会自爆扣血并额外推进回合。Phase 后续解锁。"
+  },
+  {
+    "id": "rumor-ocd",
+    "name": "强迫症",
+    "category": "规则怪谈",
+    "status": "locked",
+    "description": "某干员在奇数回合不可发射。Phase 后续解锁。"
+  },
+  {
+    "id": "rumor-illiterate",
+    "name": "文盲",
+    "category": "规则怪谈",
+    "status": "locked",
+    "description": "对语文卷伤害减半；答题时一半文字变成「口」。Phase 后续解锁。"
+  },
+  {
+    "id": "rumor-ceo",
+    "name": "可靠的 CEO",
+    "category": "规则怪谈",
+    "status": "locked",
+    "description": "场上有阿米娅时，按出战角色种类数量追加数值。Phase 后续解锁。"
+  }
+]

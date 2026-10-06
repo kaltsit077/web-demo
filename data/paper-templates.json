@@ -1,0 +1,62 @@
+{
+  "chinese-basic": {
+    "name": "默写·语文1级",
+    "subject": "chinese",
+    "role": "基础试卷",
+    "description": "最常见的语文默写卷。用语文能力砸过去就对了。",
+    "passLine": 24,
+    "maxScore": 100,
+    "radius": 42,
+    "resistance": 1,
+    "moveDown": 1,
+    "color": "#e74c3c"
+  },
+  "math-basic": {
+    "name": "计算题·数学1级",
+    "subject": "math",
+    "role": "基础试卷",
+    "description": "数字密密麻麻。数学干员的主场。",
+    "passLine": 28,
+    "maxScore": 100,
+    "radius": 42,
+    "resistance": 1,
+    "moveDown": 1,
+    "color": "#3498db"
+  },
+  "english-basic": {
+    "name": "单词默写·EN1级",
+    "subject": "english",
+    "role": "基础试卷",
+    "description": "单词表永不结束。英语能力越高，越容易击溃。",
+    "passLine": 22,
+    "maxScore": 100,
+    "radius": 40,
+    "resistance": 1,
+    "moveDown": 1,
+    "color": "#9b59b6"
+  },
+  "chinese-quiz": {
+    "name": "周测·语文",
+    "subject": "chinese",
+    "role": "周测试卷",
+    "description": "合格线更高、抗性略低。别让它摸到防线。",
+    "passLine": 35,
+    "maxScore": 100,
+    "radius": 46,
+    "resistance": 0.9,
+    "moveDown": 1,
+    "color": "#c0392b"
+  },
+  "math-quiz": {
+    "name": "周测·数学",
+    "subject": "math",
+    "role": "周测试卷",
+    "description": "周末的噩梦升级版。数学三围高的干员优先上弓。",
+    "passLine": 38,
+    "maxScore": 100,
+    "radius": 46,
+    "resistance": 0.9,
+    "moveDown": 1,
+    "color": "#2980b9"
+  }
+}

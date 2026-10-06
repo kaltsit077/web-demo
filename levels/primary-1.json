@@ -1,0 +1,17 @@
+{
+  "id": "primary-1",
+  "name": "小学部 · 第1课",
+  "stage": "primary",
+  "playerHp": 5,
+  "operatorPool": ["amiya", "texas", "exusiai"],
+  "pickCount": 2,
+  "waves": [
+    {
+      "papers": [
+        { "template": "chinese-basic", "gridCol": 1, "gridRow": 0 },
+        { "template": "chinese-basic", "gridCol": 3, "gridRow": 0 },
+        { "template": "math-basic", "gridCol": 2, "gridRow": 1 }
+      ]
+    }
+  ]
+}

@@ -2,130 +2,68 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>外形演化 · Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>789罗德岛学院</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Orbitron:wght@600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div id="app">
-    <header class="top-bar">
-      <div class="brand">外形演化</div>
-      <div id="hud-meta" class="hud-meta" hidden></div>
-    </header>
+  <div id="app" class="rh-app">
+    <div id="screen-layer" class="rh-screen-layer"></div>
 
-    <!-- Title -->
-    <section id="screen-title" class="screen active">
-      <div class="hero-panel">
-        <h1 class="brand-hero">外形演化</h1>
-        <p class="tagline">固定技能 · 变异部位叠加强化 · 繁衍换代</p>
-        <div id="meta-preview" class="meta-preview" hidden></div>
-        <div class="cta-row">
-          <button type="button" id="btn-new-game" class="btn primary">新游戏</button>
-          <button type="button" id="btn-clear-meta" class="btn ghost" hidden>清除跨周目特征</button>
+    <div id="battle-layout" class="rh-battle-layout">
+      <div class="rh-battle-stage">
+        <canvas id="game-canvas" aria-label="刷怪区"></canvas>
+
+        <div class="rh-battle-hud">
+          <div class="rh-battle-hud__top">
+            <div class="rh-hud-chip rh-hud-chip--score">
+              <span class="rh-hud-chip__k">分数</span>
+              <span id="hud-score" class="rh-hud-chip__v">0</span>
+            </div>
+            <div class="rh-hud-chip rh-hud-chip--drop">
+              <span class="rh-hud-chip__k">下降</span>
+              <span id="hud-drop" class="rh-hud-chip__v">5.0s</span>
+            </div>
+            <div class="rh-hud-chip rh-hud-chip--hp">
+              <span class="rh-hud-chip__k">HP</span>
+              <span id="hud-hp" class="rh-hud-chip__v">5</span>
+              <span id="hud-wall" class="rh-hud-chip__sub">越线 0/3</span>
+            </div>
+            <button type="button" id="hud-pause" class="rh-hud-pause" aria-label="暂停" title="暂停">暂停</button>
+          </div>
+          <p id="hud-meta" class="rh-battle-hud__meta"></p>
         </div>
-      </div>
-    </section>
 
-    <!-- Route -->
-    <section id="screen-route" class="screen">
-      <h2>选择开局路线</h2>
-      <p class="hint">两条路线决定初始外形与药剂池偏向。</p>
-      <div class="route-grid">
-        <button type="button" class="route-card" data-route="monster">
-          <span class="route-badge">A</span>
-          <strong>强怪物</strong>
-          <span>初始强悍 · 后代趋人变弱</span>
-        </button>
-        <button type="button" class="route-card" data-route="human">
-          <span class="route-badge">B</span>
-          <strong>普通人</strong>
-          <span>初始平凡 · 后代畸变变强</span>
-        </button>
+        <p id="battle-aim-hint" class="rh-battle-aim-hint">按住拖拽瞄准 · 松手发射</p>
       </div>
-      <button type="button" id="btn-route-back" class="btn ghost">返回</button>
-    </section>
 
-    <!-- Map -->
-    <section id="screen-map" class="screen">
-      <div class="map-header">
-        <div>
-          <h2>旅程</h2>
-          <p id="year-label" class="year-label">第 1 年 / 目标 10 年</p>
+      <div class="rh-battle-dock">
+        <div class="rh-dock-board">
+          <div class="rh-dock-section rh-dock-section--loaded">
+            <span class="rh-dock-section__label">上弓</span>
+            <div id="dock-loaded" class="rh-dock-loaded-slot"></div>
+            <span id="dock-loaded-name" class="rh-dock-loaded-name">—</span>
+          </div>
+          <div class="rh-dock-divider" aria-hidden="true"></div>
+          <div class="rh-dock-section rh-dock-section--queue">
+            <span class="rh-dock-section__label">待命（点击换人）</span>
+            <div id="dock-ops" class="rh-dock-ops"></div>
+          </div>
         </div>
-        <button type="button" id="btn-advance" class="btn primary">进入节点</button>
+        <p class="rh-dock-note">道具栏将在后续关卡解锁</p>
       </div>
-      <div id="node-track" class="node-track"></div>
-      <div class="team-panel">
-        <h3>队伍（固定槽）</h3>
-        <div id="team-slots" class="team-slots"></div>
-      </div>
-      <div id="map-log" class="log-box"></div>
-    </section>
+    </div>
 
-    <!-- Battle -->
-    <section id="screen-battle" class="screen">
-      <div class="battle-header">
-        <h2 id="battle-title">挑战</h2>
-        <p id="battle-turn" class="hint"></p>
+    <div id="modal-layer" class="rh-modal-layer">
+      <div id="modal-backdrop" class="rh-modal-backdrop">
+        <div id="modal-content" class="rh-modal rh-panel"></div>
       </div>
-      <div class="battlefield">
-        <div class="side enemy-side">
-          <h3>敌方</h3>
-          <div id="enemy-slots" class="combat-slots"></div>
-        </div>
-        <div class="side ally-side">
-          <h3>我方（后 ← 前）</h3>
-          <div id="ally-slots" class="combat-slots"></div>
-        </div>
-      </div>
-      <div class="battle-actions">
-        <div id="skill-bar" class="skill-bar"></div>
-        <div id="target-hint" class="hint">选择技能，再点敌方目标</div>
-      </div>
-      <div id="battle-log" class="log-box"></div>
-      <div id="battle-end" class="battle-end" hidden>
-        <p id="battle-result"></p>
-        <button type="button" id="btn-battle-continue" class="btn primary">继续</button>
-        <button type="button" id="btn-battle-retry" class="btn ghost" hidden>重试本节点</button>
-      </div>
-    </section>
-
-    <!-- Loot / Remix -->
-    <section id="screen-loot" class="screen">
-      <h2>药剂 · 基因重组</h2>
-      <p id="loot-desc" class="hint">获得一瓶药剂。选择一个部位进行随机重组。</p>
-      <div id="potion-card" class="potion-card"></div>
-      <div id="remix-parts" class="part-pick"></div>
-      <div id="remix-result" class="remix-result" hidden></div>
-      <button type="button" id="btn-loot-done" class="btn primary" hidden>继续旅程</button>
-    </section>
-
-    <!-- Key choice -->
-    <section id="screen-key" class="screen">
-      <h2>关键分叉</h2>
-      <p id="key-desc" class="hint"></p>
-      <div class="key-actions">
-        <button type="button" id="btn-breed" class="btn primary">繁衍（角色死亡，换子嗣）</button>
-        <button type="button" id="btn-devour" class="btn danger">吞噬队友部位</button>
-      </div>
-      <div id="key-detail" class="key-detail"></div>
-      <div id="key-result" class="remix-result" hidden></div>
-      <button type="button" id="btn-key-done" class="btn primary" hidden>继续旅程</button>
-    </section>
-
-    <!-- Run end -->
-    <section id="screen-end" class="screen">
-      <h2>本局结束</h2>
-      <p class="hint">从最终主角身上选 1 个部位特征，带入下一局。</p>
-      <div id="trait-pick" class="part-pick"></div>
-      <button type="button" id="btn-save-trait" class="btn primary" disabled>带走并返回标题</button>
-    </section>
+    </div>
   </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/state.js"></script>
-  <script src="js/combat.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

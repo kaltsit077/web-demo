@@ -1,0 +1,10 @@
+{
+  "name": "web-demo-rhodes-academy",
+  "private": true,
+  "type": "module",
+  "description": "789罗德岛学院 · 本地静态预览",
+  "scripts": {
+    "start": "node scripts/dev-server.mjs",
+    "dev": "node scripts/dev-server.mjs"
+  }
+}

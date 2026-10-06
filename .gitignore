@@ -1,4 +1,4 @@
-﻿# OS / editor
+# OS / editor
 .DS_Store
 Thumbs.db
 *.swp
@@ -7,3 +7,7 @@ Thumbs.db
 *.log
 .env
 .env.*
+
+# asset download cache / vendor dumps
+assets/_tmp/
+_vendor_tmp/
